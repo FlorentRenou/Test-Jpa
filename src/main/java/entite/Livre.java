@@ -1,3 +1,5 @@
+package entite;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -48,9 +50,8 @@ public class Livre implements Serializable {
     @Override
     public String toString() {
         return "Livre{" +
-                "id=" + id +
-                ", titre=" + titre +
-                ", auteur=" + auteur +
+                "titre='" + titre + '\'' +
+                ", auteur='" + auteur + '\'' +
                 '}';
     }
 }
