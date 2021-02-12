@@ -37,6 +37,9 @@ public class App {
 
         em.remove(livre);
 
+        Livre allLivre = em.find(Livre.class,1);
+        System.out.println(allLivre.toString());
+
         /* Tous afficher (Fonctionne pas)
         TypedQuery<Livre> querySelect = em.createQuery("SELECT Livre.auteur,Livre.titre FROM Livre", Livre.class);
         System.out.println(querySelect.getResultList());
